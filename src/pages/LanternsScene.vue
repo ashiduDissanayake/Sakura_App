@@ -30,14 +30,14 @@ export default {
     const commonPositionY = -0.5;
     return {
       mindarImage:{
-        targetSrc: "./targets/targets.mind",
+        targetSrc: "./targets/maskTarget.mind",
         filterMinCF: 0.00001,
         filterBeta: 0.001
       },
       assets:[
         new AAssetItem("lantern-1-glb", "./3d-models/ImageTarget.glb"),
-        new AAssetItem("lantern-2-glb", "./3d-models/ImageTarget2.glb"),
-        new AAssetItem("lantern-3-glb", "./3d-models/ImageTarget3.glb"),
+        new AAssetItem("lantern-2-glb", "./3d-models/ImageTarget.glb"),
+        new AAssetItem("lantern-3-glb", "./3d-models/ImageTarget.glb"),
       ],
       modelsInTargets:[
         [
