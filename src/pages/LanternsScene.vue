@@ -1,6 +1,6 @@
 <template>
   <Logo/>
-  <GoToLink text="AR Mihintale" link="#/mihintale" />
+  <!-- <GoToLink text="AR Mihintale" link="#/mihintale" /> -->
   <ARScenePage>
   <template #scene>
     <ARScene ref="ar-scene" :mindarImage="mindarImage" :modelsInTargets="modelsInTargets" :assets="assets"/>
