@@ -42,8 +42,8 @@ export default {
           new AGltfModelData("lantern-1", "#lantern-1-glb",{
             positionX:-1.75,
             scale: commonScale,
-            positionY:0,
-            rotationX: 90,
+            positionY:0.5,
+            rotationX: 0,
           }),
         ],
         // [
