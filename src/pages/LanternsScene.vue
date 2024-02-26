@@ -43,6 +43,7 @@ export default {
             positionX:-1.75,
             scale: commonScale,
             positionY:0,
+            rotationX: 90,
           }),
         ],
         // [
