@@ -1,7 +1,8 @@
 <template>
+  
   <a id="lantern-button" class="selection-button" href="#/lanterns">
                 <span class="button-text">
-                    Click here
+                    Click me
                 </span>
   </a>
 </template>
@@ -35,7 +36,7 @@ export default {
 }
 
 #lantern-button {
-  background-image: url('/mavisuru picture.png');
+  background-image: url('/mavisuru picture.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -39,7 +39,7 @@ export default {
 }
 
 #mihintale-button {
-  background-image: url('/mavisuru picture.png');
+  background-image: url('/mavisuru picture.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

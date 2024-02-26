@@ -1,4 +1,5 @@
 <template>
+    <Logo/>
     <div class="selection-page">
         <!-- <h2 class="selection-header">Select the Model</h2> -->
         <div class="selection-buttons zoom-in-animation">
@@ -10,9 +11,10 @@
 <script>
 import LanternsLink from "../components/LanternsLink.vue";
 import MihintaleLink from "../components/MihintaleLink.vue";
+import Logo from "../components/Logo.vue";
 
 export default {
-  components: {MihintaleLink, LanternsLink},
+  components: {MihintaleLink, LanternsLink, Logo},
   data () {
         return {}
     },
