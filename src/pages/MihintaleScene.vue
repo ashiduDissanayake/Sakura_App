@@ -36,7 +36,7 @@ export default {
       assets: [
         new AAssetItem("deer-glb", "./3d-models/ImageTarget.glb"),
         new AAssetItem("mihintale-glb", "./3d-models/ImageTarget.glb"),
-        new AAssetItem("king-glb", "./3d-models/ImageTarget.glb"
+        new AAssetItem("king-glb", "./3d-models/ImageTarget.glb")
       ],
       modelsInTargets: [ // 0 indexed targets in mindar-image
         [
