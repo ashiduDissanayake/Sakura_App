@@ -1,7 +1,7 @@
 <template>
   <a id="lantern-button" class="selection-button" href="#/lanterns">
                 <span class="button-text">
-                    AR Lanterns
+                    Click here
                 </span>
   </a>
 </template>
@@ -35,7 +35,7 @@ export default {
 }
 
 #lantern-button {
-  background-image: url('/ar-lantern-design.png');
+  background-image: url('/mavisuru picture.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

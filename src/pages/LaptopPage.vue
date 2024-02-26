@@ -63,7 +63,7 @@ export default {
   width: 100vw;
 }
 .web-back-img{
-  background-image: url('/poson-web-back-v2-scaled.jpg');
+  background-image: url('/mavisuru-poster.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
