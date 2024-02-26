@@ -34,13 +34,13 @@ export default {
       },
       // Add any data you need for your AR scene
       assets: [
-        new AAssetItem("deer-glb", "./3d-models/Deer.glb"),
-        new AAssetItem("mihintale-glb", "./3d-models/Mihintale.glb"),
-        new AAssetItem("king-glb", "./3d-models/King.glb"),
+        new AAssetItem("deer-glb", "./3d-models/ImageTarget.glb"),
+        new AAssetItem("mihintale-glb", "./3d-models/ImageTarget.glb"),
+        new AAssetItem("king-glb", "./3d-models/ImageTarget.glb"
       ],
       modelsInTargets: [ // 0 indexed targets in mindar-image
         [
-          new AGltfModelData("deer", "#deer-glb", {
+          new AGltfModelData("deer", "#ImageTarget.glb-glb", {
             rotationY: -180,
             scale: commonScale,
             positionY : -0.5
