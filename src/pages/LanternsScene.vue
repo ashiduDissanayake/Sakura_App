@@ -36,30 +36,15 @@ export default {
       },
       assets:[
         new AAssetItem("lantern-1-glb", "./3d-models/ImageTarget.glb"),
-        new AAssetItem("lantern-2-glb", "./3d-models/ImageTarget.glb"),
-        new AAssetItem("lantern-3-glb", "./3d-models/ImageTarget.glb"),
       ],
       modelsInTargets:[
         [
           new AGltfModelData("lantern-1", "#lantern-1-glb",{
-            positionX:-1.75,
+            positionX:0,
             scale: commonScale,
-            positionY:commonPositionY,
-          }),
+            positionY:0,
+          })
         ],
-        [
-          new AGltfModelData("lantern-2", "#lantern-2-glb",{
-            scale: 1.2,
-            positionY:commonPositionY,
-          }),
-        ],
-        [
-          new AGltfModelData("lantern-3", "#lantern-3-glb",{
-            positionX:2.75,
-            positionY:commonPositionY,
-            scale: commonScale
-          }),
-        ]
       ],
 
     }
