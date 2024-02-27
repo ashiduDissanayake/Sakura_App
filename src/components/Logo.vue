@@ -15,10 +15,10 @@ export default {
 </script>
 <style scoped>
 .logo img {
-  height: 9.5vh;
-  position: absolute;
-  z-index: 999;
-  top: 0.5vh;
-  left: 0.5vw;
+    width: 50vw;
+    position: absolute;
+    z-index: 999;
+    top: 5vh;
+    left: 25vw;
 }
 </style>
