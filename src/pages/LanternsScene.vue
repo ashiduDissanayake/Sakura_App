@@ -35,7 +35,7 @@ export default {
         filterBeta: 0.001
       },
       assets:[
-        new AAssetItem("lantern-1-glb", "./3d-models/ImageTarget.glb"),
+        new AAssetItem("lantern-1-glb", "./3d-models/Mask6.glb"),
       ],
       modelsInTargets:[
         [
