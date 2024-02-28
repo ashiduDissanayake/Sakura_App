@@ -40,9 +40,9 @@ export default {
       modelsInTargets:[
         [
           new AGltfModelData("lantern-1", "#lantern-1-glb",{
-            positionX:-1.45,
+            positionX:-1.25,
             scale: 0.5,
-            positionY:1.5,
+            positionY:0.5,
             rotationX: 90,
             positionZ: -1
           }),
