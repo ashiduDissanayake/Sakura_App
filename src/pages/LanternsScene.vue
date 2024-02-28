@@ -43,6 +43,7 @@ export default {
             positionX:-.25,
             scale: 0.5,
             positionY:0.5,
+            animationClip: "Breath",
             rotationX: 0,
             positionZ: -1
           }),
