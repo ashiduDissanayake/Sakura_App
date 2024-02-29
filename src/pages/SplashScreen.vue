@@ -30,6 +30,8 @@ export default {
   height: 100vh;
   position: absolute;
   width: 100vw;
+  animation : gradient-animation 10s infinite alternate;
+  background-size: 100% 400%;
   top: 0;
   left: 0;
   z-index: 99999 !important;
@@ -43,6 +45,16 @@ export default {
 
 #splash-text img {
   height: 85vh;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position : 100% 10%;
+  }
+  100% {
+    background-position: 100% 90%;
+  }
+  
 }
 
 @keyframes zoom-in {

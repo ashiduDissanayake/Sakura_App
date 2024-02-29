@@ -38,12 +38,23 @@ export default {
     .zoom-in-animation {
     animation: zoom-in 2s ease-in-out infinite;
     }
+
+    @keyframes gradient-animation {
+    0% {
+        background-position : 100% 10%;
+    }
+    100% {
+        background-position: 100% 90%;
+    }
+    }
     .selection-page {
         background: var(--bg-gradient);
         height: 95vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        animation : gradient-animation 10s infinite alternate;
+        background-size: 100% 400%;
     }
 
     .selection-header {

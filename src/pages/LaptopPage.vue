@@ -4,11 +4,11 @@
     <div v-else class="bg">
       <div class="web-back-img"></div>
       <div class="steps-container">
-        <img src="/qrcode_cse-poson-ar.vercel.app.png" alt="QR code to cse-poson-ar.vercel.app">
+        <img src="/qr-code.png" alt="QR code to cse-poson-ar.vercel.app">
         <div class="steps">
-          <h2>Scan the QR Code using your mobile phone to experience Poson with Augmented Reality</h2>
+          <h2>Scan the QR Code using your mobile phone to experience the art of Mavisuru</h2>
         </div>
-        <img id="cse-logo" src="/logo-2.png" alt="CSE Logo">
+        <!-- <img id="cse-logo" src="/logo-2.png" alt="CSE Logo"> -->
       </div>
     </div>
   </transition>
@@ -64,10 +64,10 @@ export default {
 }
 .web-back-img{
   background-image: url('/mavisuru-poster.png');
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size : auto 120%;
   background-position: center;
-  height: 90vh;
+  height : 90vh;
   width: 65vw;
   position: absolute;
   top: 5vh;

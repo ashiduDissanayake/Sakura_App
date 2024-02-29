@@ -1,6 +1,6 @@
 <template>
   <div @click="goToHome" class="logo">
-    <img src="/mavisuru-logo.png" alt="logo">
+    <img src="/mavisuru-logo-white.png" alt="logo">
   </div>
 </template>
 <script>
