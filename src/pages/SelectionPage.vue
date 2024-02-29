@@ -10,11 +10,10 @@
 
 <script>
 import LanternsLink from "../components/LanternsLink.vue";
-import MihintaleLink from "../components/MihintaleLink.vue";
 import Logo from "../components/Logo.vue";
 
 export default {
-  components: {MihintaleLink, LanternsLink, Logo},
+  components: {LanternsLink, Logo},
   data () {
         return {}
     },

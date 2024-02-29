@@ -1,26 +1,25 @@
 <template>
   <Logo/>
-  <!-- <GoToLink text="AR Mihintale" link="#/mihintale" /> -->
+  <GoToLink text="Back to homepage" link="#/" />
   <ARScenePage>
   <template #scene>
     <ARScene ref="ar-scene" :mindarImage="mindarImage" :modelsInTargets="modelsInTargets" :assets="assets"/>
     <ARScene ref="ar-scene" :mindarImage="mindarImage1" :modelsInTargets="modelsInTargets" :assets="assets"/>
   </template>
 </ARScenePage>
+
 </template>
 
 <script>
 import ARScenePage from './ARScenePage.vue'
 import ARScene from "../components/ARScene.vue";
 import {AAssetItem, AGltfModelData} from "../assets/aframe-helper.js";
-import MihintaleLink from "../components/MihintaleLink.vue";
 import GoToLink from "./GoToLink.vue";
 import Logo from "../components/Logo.vue"
 
 export default {
   name: "LanternsScene",
   components: {
-    MihintaleLink,
     ARScenePage,
     ARScene,
     GoToLink,
@@ -85,9 +84,9 @@ export default {
 
 <style scoped>
 /*pass this to inner component*/
-:deep(#mihintale-button-text) {
+/* :deep(#mihintale-button-text) {
   margin-top: 0 !important;
-}
+} */
 :deep(.selection-button){
 
 }
