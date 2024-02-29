@@ -34,6 +34,11 @@ export default {
         filterMinCF: 0.00001,
         filterBeta: 0.001
       },
+      mindarImage:{
+        targetSrc: "./targets/targets-final.mind",
+        filterMinCF: 0.00001,
+        filterBeta: 0.001
+      },
       assets:[
         new AAssetItem("lantern-1-glb", "./3d-models/Mask6.glb"),
       ],
