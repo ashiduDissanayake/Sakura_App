@@ -29,12 +29,12 @@ export default {
     const commonScale = 1.5;
     const commonPositionY = -0.5;
     return {
-      mindarImage:{
+      mindarImage1:{
         targetSrc: "./targets/maskTarget.mind",
         filterMinCF: 0.00001,
         filterBeta: 0.001
       },
-      mindarImage1:{
+      mindarImage:{
         targetSrc: "./targets/targets-final.mind",
         filterMinCF: 0.00001,
         filterBeta: 0.001
