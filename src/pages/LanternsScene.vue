@@ -4,6 +4,7 @@
   <ARScenePage>
   <template #scene>
     <ARScene ref="ar-scene" :mindarImage="mindarImage" :modelsInTargets="modelsInTargets" :assets="assets"/>
+    <ARScene ref="ar-scene" :mindarImage="mindarImage1" :modelsInTargets="modelsInTargets" :assets="assets"/>
   </template>
 </ARScenePage>
 </template>
@@ -34,16 +35,25 @@ export default {
         filterMinCF: 0.00001,
         filterBeta: 0.001
       },
-      mindarImage:{
+      mindarImage1:{
         targetSrc: "./targets/targets-final.mind",
         filterMinCF: 0.00001,
         filterBeta: 0.001
       },
       assets:[
         new AAssetItem("lantern-1-glb", "./3d-models/Mask6.glb"),
+        new AAssetItem("lantern-1-glb", "./3d-models/Mask6.glb"),
       ],
       modelsInTargets:[
         [
+          new AGltfModelData("lantern-1", "#lantern-1-glb",{
+            positionX:-.25,
+            scale: 0.5,
+            positionY:0.5,
+            animationClip: "Breath",
+            rotationX: 0,
+            positionZ: -1
+          }),
           new AGltfModelData("lantern-1", "#lantern-1-glb",{
             positionX:-.25,
             scale: 0.5,

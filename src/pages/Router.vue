@@ -1,11 +1,9 @@
 <script>
 import SelectionPage from './SelectionPage.vue';
-import MihintaleScene from "./MihintaleScene.vue";
 import LanternsScene from "./LanternsScene.vue";
 
 const routes = {
   '/': SelectionPage,
-  '/mihintale': MihintaleScene,
   '/lanterns': LanternsScene
 }
 
