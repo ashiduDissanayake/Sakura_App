@@ -4,7 +4,7 @@
     <div v-else class="bg">
       <div class="web-back-img"></div>
       <div class="steps-container">
-        <img src="/qr-code.png" alt="QR code to cse-poson-ar.vercel.app">
+        <img src="/mavisuru-qr-final.png" alt="QR code to cse-poson-ar.vercel.app">
         <div class="steps">
           <h2>Scan the QR Code using your mobile phone to experience the art of Mavisuru</h2>
         </div>
