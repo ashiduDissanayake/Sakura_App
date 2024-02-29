@@ -1,6 +1,6 @@
 <template>
   <Logo/>
-  <GoToLink text="Back to homepage" link="#/" />
+  <GoToLink text="Homepage" link="#/" />
   <ARScenePage>
   <template #scene>
     <ARScene ref="ar-scene" :mindarImage="mindarImage" :modelsInTargets="modelsInTargets" :assets="assets"/>
@@ -23,7 +23,7 @@ export default {
     ARScenePage,
     ARScene,
     GoToLink,
-    Logo
+    Logo,
   },
   data(){
     const commonScale = 1.5;

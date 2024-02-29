@@ -1,6 +1,6 @@
 <template>
   <a class="go-to" :href="link">
-    <div class="switch">Switch to</div>
+    <div class="switch">Back to</div>
     {{text}}
   </a>
 </template>
