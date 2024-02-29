@@ -2,6 +2,10 @@
   <div class="gradient">
     <div id="splash-text" class="zoom-in-animation">
       <img v-if="isImageLoaded" alt="Anubudu Vandana" src="/splash-text.png">
+      <!-- <img class="logo" src="/mavisuru-logo.png" alt="">
+      <img class="time" src="/05,06.png" alt="">
+      <img class="lagaan" src="/Lagaan.png" alt="">
+      <img class="batch" src="/22-batch.png" alt=""> -->
     </div>
   </div>
 </template>
@@ -41,10 +45,27 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 #splash-text img {
   height: 85vh;
+}
+
+.logo {
+  height : 15vh !important;
+}
+
+.lagaan {
+  height : 22vh !important;
+}
+
+.time {
+  height : 22vh !important;
+}
+
+.batch {
+  height : 20vh !important;
 }
 
 @keyframes gradient-animation {
