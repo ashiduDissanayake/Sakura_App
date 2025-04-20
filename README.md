@@ -23,5 +23,10 @@ npm run build
 ```ps
 npm run serve
 ```
+5. The terminal will give the links to access the website from the computer or from a device in the local network
 
+6. Once the page is loaded scan the image below to view the AR content.
+
+![Image to scan](public/qr-code.png)
+```
 
