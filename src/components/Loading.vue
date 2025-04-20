@@ -1,12 +1,5 @@
 <template>
   <div :id="loadingOverlayId" class="overlay">
-    <div style="padding-inline: 3rem">
-      <img
-        :src="logo"
-        style="width: 100%; max-height: 300px; object-fit: contain"
-        alt="logo"
-      />
-    </div>
     <LottieAnimation
       :animation-data="scanAnimation"
       :loop="true"
@@ -20,7 +13,6 @@
 import { defineComponent } from "vue";
 import { LottieAnimation } from "lottie-web-vue";
 import scanAnimation from "../assets/lottie/scan.json";
-import logo from "../assets/images/petal1.webp";
 
 export default defineComponent({
   name: "Loading",
@@ -29,10 +21,7 @@ export default defineComponent({
   },
   data() {
     return {
-      lottieOptions: {
-        
-      },
-      logo,
+      scanAnimation,
       loadingOverlayId: "loading-overlay",
     };
   },
@@ -46,6 +35,5 @@ export default defineComponent({
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: var(--theme-bg);
 }
 </style>

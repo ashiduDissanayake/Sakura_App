@@ -1,6 +1,6 @@
 <template>
   <div @click="goToHome" class="logo">
-    <img src="../assets/images/logo.webp" alt="" srcset="">
+    <img src="../assets/images/logo.webp" alt="" srcset="" />
   </div>
 </template>
 
@@ -16,10 +16,10 @@ export default {
 </script>
 <style scoped>
 .logo img {
-  width: 50vw;
-  position: absolute;
-  z-index: 999;
-  /* top: 5vh; */
-  left: 25vw;
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 </style>
