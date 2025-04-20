@@ -3,7 +3,8 @@
 </template>
 
 <script>
-import Router from './pages/Router.vue';
+import { store } from './store';
+import Router from './router.vue';
 
 export default {
   name: 'App',
@@ -12,7 +13,7 @@ export default {
   },
   data() {
     return {
-      devicePage: null,
+      devicePage: Router,
     };
   },
   mounted() {
@@ -27,11 +28,8 @@ export default {
       const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
       const isMobile = screenWidth < 768; // Adjust the breakpoint according to your design
       if (!isMobile) {
-        // redirect to 
-        window.location.href = "https://cse40.cse.uom.lk/";
+        store.disableAr();
       }
-  
-      this.devicePage = Router;
     },
   },
 };

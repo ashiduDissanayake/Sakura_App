@@ -1,5 +1,5 @@
 <script>
-import PageHome from './PageHome.vue'
+import PageHome from './pages/PageHome.vue'
 
 const routes = {
   '/': PageHome,
