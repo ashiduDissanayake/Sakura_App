@@ -1,4 +1,4 @@
-# CSE Poson Event WebAR Project
+# CSE Padura WebAR Project
 
 ## Project Overview
 
