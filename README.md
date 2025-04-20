@@ -15,12 +15,16 @@ This application was built to introduce Augmented Reality on the Web using the i
 ```ps
 npm install
 ```
-3. Run the server
+3. Build the app
 ```ps
-npm start
+npm run build
 ```
-4. Open the browser and navigate to `localhost:3000`
-5. Enjoy!
-6. To stop the server, press `Ctrl+C` in the terminal
+4. Run the server
+```ps
+npm run serve
+```
+5. Open the browser and navigate to `localhost:3000`
+6. Enjoy!
+7. To stop the server, press `Ctrl+C` in the terminal
 
 
