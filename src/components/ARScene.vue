@@ -70,8 +70,8 @@ export default {
       }; maxTrack: ${this.getNumberOfTargets()}; filterMinCF: ${
         this.mindarImage.filterMinCF
       }; filterBeta: ${this.mindarImage.filterBeta};
-      uiLoading: #${loadingOverlayId};
-      uiScanning: #${scanningOverlayId};`;
+      uiLoading: #${this.loadingOverlayId};
+      uiScanning: #${this.scanningOverlayId};`;
     },
     getNumberOfTargets() {
       return this.modelsInTargets.length;
