@@ -22,17 +22,17 @@
 }
 
 .petal-1 {
-  background-image: url("/petal1.webp");
+  background-image: url("/images/petal1.webp");
   animation: fall 10s linear infinite, sway1 4s ease-in-out infinite alternate;
 }
 
 .petal-2 {
-  background-image: url("/petal2.webp");
+  background-image: url("/images/petal2.webp");
   animation: fall 12s linear infinite, sway2 6s ease-in-out infinite alternate;
 }
 
 .petal-3 {
-  background-image: url("/petal3.webp");
+  background-image: url("/images/petal3.webp");
   animation: fall 8s linear infinite, sway3 3s ease-in-out infinite alternate;
 }
 
