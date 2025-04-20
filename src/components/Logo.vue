@@ -20,6 +20,5 @@ export default {
   height: auto;
   max-width: 200px;
   cursor: pointer;
-  transition: transform 0.3s ease;
 }
 </style>

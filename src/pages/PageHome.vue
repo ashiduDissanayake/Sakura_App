@@ -30,11 +30,10 @@ export default {
 .logo {
   position: absolute;
   z-index: 9999;
-  bottom: 0;
   left: 0;
   width: 100px;
   background-color: var(--theme-bg);
   border: 0px;
-  border-radius: 0 45px 0 0;
+  border-radius: 0 0 45px 0;
 }
 </style>
