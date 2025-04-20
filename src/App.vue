@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import LaptopPage from './pages/LaptopPage.vue';
+
 import Router from './pages/Router.vue';
 
 export default {
