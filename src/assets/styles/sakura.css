@@ -93,10 +93,11 @@
 
 .music-control::before {
   content: "♪";
-  font-size: 24px;
+  font-size: 2rem;
   color: var(--sakura-white);
 }
 
 .music-control.playing::before {
-  content: "⏸";
+  content: "❚❚";
+  font-size: 0.8rem;
 }
