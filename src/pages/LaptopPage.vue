@@ -6,7 +6,7 @@
       <div class="steps-container">
         <img src="/qr-code.png" alt="QR code to cse-poson-ar.vercel.app">
         <div class="steps">
-          <h2>Scan the QR Code using your mobile phone to experience the art of Mavisuru</h2>
+          <h2>Scan the QR Code using your mobile phone to experience the art of Sakura</h2>
         </div>
         <!-- <img id="cse-logo" src="/logo-2.png" alt="CSE Logo"> -->
       </div>
