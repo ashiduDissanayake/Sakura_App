@@ -1,8 +1,8 @@
 <template>
-  <div class="logo">
+  <div class="logo" v-if="isImageLoaded">
     <Logo />
   </div>
-  <!-- <SplashScreen v-if="!isImageLoaded" @image-loaded="isImageLoaded = true" /> -->
+  <SplashScreen v-if="!isImageLoaded" @image-loaded="isImageLoaded = true" />
   <Loading />
 </template>
 
