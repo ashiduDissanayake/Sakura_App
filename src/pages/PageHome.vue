@@ -1,7 +1,4 @@
 <template>
-  <div class="logo" v-if="isImageLoaded">
-    <Logo />
-  </div>
   <ARScenePage>
     <template #scene>
       <ARScene
@@ -51,15 +48,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.logo {
-  position: absolute;
-  z-index: 9999;
-  left: 0;
-  width: 100px;
-  background-color: var(--theme-bg);
-  border: 0px;
-  border-radius: 0 0 45px 0;
-}
-</style>

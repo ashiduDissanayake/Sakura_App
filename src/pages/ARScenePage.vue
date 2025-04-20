@@ -31,11 +31,13 @@
  * - The `bind(this)` ensures that the event listener has the correct `this` context to modify the `showSplashScreen` property.
  */
 import SplashScreen from "./SplashScreen.vue";
+import Logo from "../components/Logo.vue";
 
 export default {
   name: "ARScenePage",
   components: {
     SplashScreen,
+    Logo,
   },
   data() {
     return {
@@ -48,23 +50,39 @@ export default {
     },
   },
   mounted() {
-    const ascene = document.querySelector('a-scene');
+    const ascene = document.querySelector("a-scene");
     ascene.addEventListener(
       "renderstart",
-      (function onAframeRenderStart() {
+      function onAframeRenderStart() {
         let haveRun = false;
         return function () {
           if (haveRun) return;
           haveRun = true;
           this.showSplashScreen = false;
         }.bind(this);
-      }.call(this)))
+      }.call(this)
+    );
   },
 };
 </script>
 
 <template>
+  <div class="logo" v-if="!splashScreen">
+    <Logo />
+  </div>
   <SplashScreen v-if="splashScreen" />
   <!--    slot-->
   <slot name="scene"></slot>
 </template>
+
+<style scoped>
+.logo {
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  width: 100px;
+  background-color: var(--theme-bg);
+  border: 0px;
+  border-radius: 0 0 45px 0;
+}
+</style>
