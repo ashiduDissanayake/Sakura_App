@@ -1,15 +1,14 @@
 <template>
-  <div class="gradient"></div>
+  <div class="gradient" id="loading-overlay">
+    <div class="logo">
+      <img src="../assets/images/logo.webp" alt="" srcset="" />
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
   name: "SplashScreen",
-  data() {
-    return {
-      isImageLoaded: false,
-    };
-  },
 };
 </script>
 
@@ -23,9 +22,11 @@ export default {
   background-size: 100% 400%;
   top: 0;
   left: 0;
-  z-index: 99999 !important;
+  z-index: 99 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 @keyframes gradient-animation {
   0% {
@@ -35,6 +36,18 @@ export default {
   100% {
     background-position: 100% 90%;
   }
+}
 
+.logo img {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .logo img {
+    width: 80vw;
+  }
+  
 }
 </style>

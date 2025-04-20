@@ -1,0 +1,107 @@
+/* Falling Sakura petals animation */
+.sakura-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.petal {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+  z-index: 1;
+  pointer-events: none;
+  top: -10%;
+}
+
+.petal-1 {
+  background-image: url("/images/petal1.webp");
+  animation: fall 10s linear infinite, sway1 4s ease-in-out infinite alternate;
+}
+
+.petal-2 {
+  background-image: url("/images/petal2.webp");
+  animation: fall 12s linear infinite, sway2 6s ease-in-out infinite alternate;
+}
+
+.petal-3 {
+  background-image: url("/images/petal3.webp");
+  animation: fall 8s linear infinite, sway3 3s ease-in-out infinite alternate;
+}
+
+@keyframes fall {
+  0% {
+    top: -10%;
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    top: 100%;
+    transform: translateX(20px) rotate(360deg);
+  }
+}
+
+@keyframes sway1 {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 100px;
+  }
+}
+
+@keyframes sway2 {
+  0% {
+    margin-left: 100px;
+  }
+  100% {
+    margin-left: -50px;
+  }
+}
+
+@keyframes sway3 {
+  0% {
+    margin-left: -50px;
+  }
+  100% {
+    margin-left: 75px;
+  }
+}
+
+/* Background music controls */
+.music-control {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  background-color: var(--sakura-pink-deep);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
+
+.music-control::before {
+  content: "♫";
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-bottom: 0.25rem;
+  color: var(--sakura-white);
+}
+
+.music-control.playing::before {
+  content: "❚❚";
+  font-size: 0.8rem;
+  line-height: unset;
+  margin-bottom: 0.1rem;
+}

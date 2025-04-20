@@ -59,19 +59,6 @@ export default {
             positionZ: -1
           }),
         ],
-        // [
-        //   new AGltfModelData("lantern-2", "#lantern-2-glb",{
-        //     scale: 1.2,
-        //     positionY:commonPositionY,
-        //   }),
-        // ],
-        // [
-        //   new AGltfModelData("lantern-3", "#lantern-3-glb",{
-        //     positionX:2.75,
-        //     positionY:commonPositionY,
-        //     scale: commonScale
-        //   }),
-        // ]
       ],
 
     }

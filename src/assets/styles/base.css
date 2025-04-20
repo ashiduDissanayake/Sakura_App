@@ -1,0 +1,28 @@
+/*Sakura Color palette*/
+:root {
+  /* Main colors */
+  --sakura-pink-light: #ffd7e9;
+  --sakura-pink: #ffb7dd;
+  --sakura-pink-deep: #ff88c2;
+  --sakura-white: #fff5f9;
+  --sakura-brown: #4d3726;
+
+  /* Accent colors */
+  --sakura-green-light: #d5ecd3;
+  --sakura-blue-light: #cce7f0;
+  --sakura-purple-light: #e5d4ed;
+
+  /* Gradients */
+  --bg-gradient: linear-gradient(
+    to bottom,
+    var(--sakura-blue-light),
+    var(--sakura-white),
+    var(--sakura-pink-light)
+  );
+  --theme-secondary: var(--sakura-white);
+  --theme-primary: var(--sakura-pink);
+  --theme-primary-dark: var(--sakura-brown);
+  --theme-bg: #ede7d7;
+
+  --text-color: var(--sakura-brown);
+}

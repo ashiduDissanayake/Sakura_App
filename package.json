@@ -7,9 +7,10 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "serve": "zapworks serve --lan"
+    "serve": "zapworks serve --lan dist/"
   },
   "dependencies": {
+    "lottie-web-vue": "^2.0.7",
     "vue": "^3.2.47"
   },
   "devDependencies": {
