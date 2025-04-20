@@ -1,10 +1,8 @@
 <script>
-import SelectionPage from './SelectionPage.vue';
-import LanternsScene from "./LanternsScene.vue";
+import PageHome from './PageHome.vue'
 
 const routes = {
-  '/': SelectionPage,
-  '/lanterns': LanternsScene
+  '/': PageHome,
 }
 
 export default {
@@ -15,7 +13,7 @@ export default {
   },
   computed: {
     currentView() {
-      return routes[this.currentPath.slice(1) || '/'] || SelectionPage
+      return routes[this.currentPath.slice(1) || '/'] || PageHome
     }
   },
   mounted() {

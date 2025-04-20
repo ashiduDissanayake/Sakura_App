@@ -1,6 +1,5 @@
 <template>
   <Logo/>
-  <GoToLink text="AR Lanterns" link="#/lanterns" />
   <ARScenePage>
     <template #scene>
       <ARScene ref="ar-scene" :mindarImage="mindarImage" :modelsInTargets="modelsInTargets" :assets="assets"/>
@@ -13,13 +12,11 @@ import ARScenePage from './ARScenePage.vue';
 import {AAssetItem, AGltfModelData} from "../assets/aframe-helper.js";
 import KingAnimationController from "../assets/animator.js";
 import ARScene from "../components/ARScene.vue";
-import GoToLink from "./GoToLink.vue";
 import Logo from "../components/Logo.vue"
 
 export default {
   name: "MihintaleScene",
   components: {
-    GoToLink,
     ARScenePage,
     ARScene,
     Logo
