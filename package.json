@@ -10,7 +10,7 @@
     "serve": "zapworks serve --lan"
   },
   "dependencies": {
-    "lottie-vuejs": "^0.4.0",
+    "lottie-web-vue": "^2.0.7",
     "vue": "^3.2.47"
   },
   "devDependencies": {

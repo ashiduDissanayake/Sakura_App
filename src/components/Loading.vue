@@ -7,37 +7,45 @@
         alt="logo"
       />
     </div>
-    <lottie :animationData="bookAnimation" :loop="true" />
+    <LottieAnimation
+      :animation-data="scanAnimation"
+      :loop="true"
+      :autoplay="true"
+      style="width: 300px; height: 300px"
+    />
   </div>
 </template>
 
 <script>
 import { defineComponent } from "vue";
-import Lottie from "lottie-vuejs"; // Ensure you have a Vue-compatible Lottie library
+import { LottieAnimation } from "lottie-web-vue";
 import scanAnimation from "../assets/lottie/scan.json";
 import logo from "../assets/images/sakura-petal1.png";
 
 export default defineComponent({
   name: "Loading",
   components: {
-    Lottie,
+    LottieAnimation,
   },
   data() {
     return {
-      loadingOverlayId: "app-loading-overlay",
-      scanAnimation,
+      lottieOptions: {
+        
+      },
       logo,
+      loadingOverlayId: "loading-overlay",
     };
   },
 });
 </script>
 
 <style scoped>
-#app-loading-overlay {
-  z-index: 9999;
-}
-
-#app-loading-overlay.hidden {
-  display: none !important;
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--theme-bg);
 }
 </style>

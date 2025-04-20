@@ -22,6 +22,7 @@
   --theme-secondary: var(--sakura-white);
   --theme-primary: var(--sakura-pink);
   --theme-primary-dark: var(--sakura-brown);
+  --theme-bg: #ede7d7;
 
   --text-color: var(--sakura-brown);
 }
