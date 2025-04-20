@@ -28,7 +28,6 @@ export default {
   },
   data() {
     return {
-      isImageLoaded: false,
       mindarImage: {
         targetSrc: "./targets/targets.mind",
         filterMinCF: 0.00001,
@@ -37,9 +36,6 @@ export default {
       modelsInTargets: [
         [
           new AGltfModelData("duck", "#duck-glb", {
-            position: { x: 0, y: -0.5, z: -1 },
-            scale: { x: 1.5, y: 1.5, z: 1.5 },
-            rotation: { x: 0, y: 0, z: 0 },
           }),
         ],
       ],

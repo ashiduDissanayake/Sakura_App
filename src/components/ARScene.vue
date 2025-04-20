@@ -16,7 +16,7 @@
         :src="asset.src"
       ></a-asset-item>
     </a-assets>
-    <a-camera look-controls="enabled: false" position="0 0 0"></a-camera>
+    <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
     <a-entity
       v-for="(n, i) in getNumberOfTargets()"
       :mindar-image-target="'targetIndex:' + i"
@@ -65,13 +65,13 @@ export default {
   methods: {
     // mindar-image property
     mindArImage() {
-      return `imageTargetSrc: ${
+      return `uiLoading: #${this.loadingOverlayId}; uiScanning: #${
+        this.scanningOverlayId
+      }; imageTargetSrc: ${
         this.mindarImage.targetSrc
       }; maxTrack: ${this.getNumberOfTargets()}; filterMinCF: ${
         this.mindarImage.filterMinCF
-      }; filterBeta: ${this.mindarImage.filterBeta};
-      uiLoading: #${this.loadingOverlayId};
-      uiScanning: #${this.scanningOverlayId};`;
+      }; filterBeta: ${this.mindarImage.filterBeta};`;
     },
     getNumberOfTargets() {
       return this.modelsInTargets.length;

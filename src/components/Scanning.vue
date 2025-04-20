@@ -36,4 +36,8 @@ export default defineComponent({
   justify-content: center;
   height: 100vh;
 }
+
+.overlay.hidden {
+  display: none !important;
+}
 </style>
