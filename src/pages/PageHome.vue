@@ -29,7 +29,7 @@ export default {
   data() {
     return {
       mindarImage: {
-        targetSrc: "./targets/targets.mind",
+        targetSrc: "./sakura/targets/targets.mind",
         filterMinCF: 0.00001,
         filterBeta: 0.001,
       },
@@ -55,7 +55,7 @@ export default {
         ],
       ],
       // TODO: Change the id and path to the model
-      assets: [new AAssetItem("duck-glb", "./models/duck.glb")],
+      assets: [new AAssetItem("duck-glb", "./sakura/models/duck.glb")],
     };
   },
 };
