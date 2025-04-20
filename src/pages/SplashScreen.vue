@@ -9,11 +9,6 @@
 <script>
 export default {
   name: "SplashScreen",
-  data() {
-    return {
-      isImageLoaded: false,
-    };
-  },
 };
 </script>
 
