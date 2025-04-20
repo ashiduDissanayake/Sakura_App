@@ -1,5 +1,5 @@
 <template>
-  <div class="gradient">
+  <div class="gradient" id="loading-overlay">
     <div class="logo">
       <img src="../assets/images/logo.webp" alt="" srcset="" />
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <div :id="loadingOverlayId" class="overlay">
+  <div :id="scanningOverlayId" class="overlay">
     <LottieAnimation
       :animation-data="scanAnimation"
       :loop="true"
@@ -15,14 +15,14 @@ import { LottieAnimation } from "lottie-web-vue";
 import scanAnimation from "../assets/lottie/scan.json";
 
 export default defineComponent({
-  name: "Loading",
+  name: "Scanning",
   components: {
     LottieAnimation,
   },
   data() {
     return {
       scanAnimation,
-      loadingOverlayId: "loading-overlay",
+      scanningOverlayId: "scanning-overlay",
     };
   },
 });
