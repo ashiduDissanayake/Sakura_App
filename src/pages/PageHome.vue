@@ -35,10 +35,26 @@ export default {
       },
       modelsInTargets: [
         [
+          // TODO: Change the id and src asset of the model
+          // Make sure the model is in the public folder
+          // The second parameter is the id of the asset with the # prefix
+          // The third parameter is the model data, such as position, scale, rotation, etc.
+          // Note only certain properties are supported by AGltfModelData,
+          // if you want to add more properties like rotationY(if not implemented)
+          // , you can extend the class as required
           new AGltfModelData("duck", "#duck-glb", {
+            positionX: 0,
+            scale: 0.5,
+            positionY: 0,
+            // try '*' initially to play any animation clip, if not working,
+            // assuming "loop" is a valid animation clip name,
+            animationClip: "loop",
+            rotationX: 0,
+            positionZ: 0,
           }),
         ],
       ],
+      // TODO: Change the id and path to the model
       assets: [new AAssetItem("duck-glb", "./models/duck.glb")],
     };
   },
