@@ -11,4 +11,10 @@ body {
   background: var(--bg-gradient);
   color: var(--text-color);
   font-family: var(--font-primary);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
