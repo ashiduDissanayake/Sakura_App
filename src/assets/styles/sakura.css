@@ -91,12 +91,16 @@
 }
 
 .music-control::before {
-  content: "♪";
-  font-size: 2rem;
+  content: "♫";
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-bottom: 0.25rem;
   color: var(--sakura-white);
 }
 
 .music-control.playing::before {
   content: "❚❚";
   font-size: 0.8rem;
+  line-height: unset;
+  margin-bottom: 0.1rem;
 }
