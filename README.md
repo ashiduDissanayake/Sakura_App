@@ -23,8 +23,5 @@ npm run build
 ```ps
 npm run serve
 ```
-5. Open the browser and navigate to `localhost:3000`
-6. Enjoy!
-7. To stop the server, press `Ctrl+C` in the terminal
 
 
