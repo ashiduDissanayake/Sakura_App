@@ -3,15 +3,13 @@
 </template>
 
 <script>
-import LaptopPage from './pages/LaptopPage.vue';
 import Router from './pages/Router.vue';
 
 export default {
   name: 'App',
   components: {
-    LaptopPage,
     Router
-},
+  },
   data() {
     return {
       devicePage: null,
@@ -27,8 +25,13 @@ export default {
   methods: {
     checkDevice() {
       const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-      let isMobile = screenWidth < 768; // Adjust the breakpoint according to your design
-      this.devicePage = isMobile ? Router : LaptopPage;
+      const isMobile = screenWidth < 768; // Adjust the breakpoint according to your design
+      if (!isMobile) {
+        // redirect to 
+        window.location.href = "https://cse40.cse.uom.lk/";
+      }
+  
+      this.devicePage = Router;
     },
   },
 };
