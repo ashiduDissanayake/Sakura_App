@@ -20,7 +20,7 @@
 import { defineComponent } from "vue";
 import { LottieAnimation } from "lottie-web-vue";
 import scanAnimation from "../assets/lottie/scan.json";
-import logo from "../assets/images/sakura-petal1.png";
+import logo from "../assets/images/petal1.webp";
 
 export default defineComponent({
   name: "Loading",

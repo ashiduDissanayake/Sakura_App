@@ -22,17 +22,17 @@
 }
 
 .petal-1 {
-  background-image: url("/sakura-petal1.png");
+  background-image: url("/petal1.webp");
   animation: fall 10s linear infinite, sway1 4s ease-in-out infinite alternate;
 }
 
 .petal-2 {
-  background-image: url("/sakura-petal2.png");
+  background-image: url("/petal2.webp");
   animation: fall 12s linear infinite, sway2 6s ease-in-out infinite alternate;
 }
 
 .petal-3 {
-  background-image: url("/sakura-petal3.png");
+  background-image: url("/petal3.webp");
   animation: fall 8s linear infinite, sway3 3s ease-in-out infinite alternate;
 }
 
@@ -77,8 +77,8 @@
 /* Background music controls */
 .music-control {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 1rem;
+  right: 1rem;
   width: 40px;
   height: 40px;
   background-color: var(--sakura-pink-deep);
@@ -88,7 +88,6 @@
   align-items: center;
   cursor: pointer;
   z-index: 9999;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .music-control::before {
