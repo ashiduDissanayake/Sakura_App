@@ -1,14 +1,8 @@
 <template>
   <ARScenePage>
     <template #scene>
-      <ARScene
-        ref="ar-scene"
-        :mindarImage="mindarImage"
-        :modelsInTargets="modelsInTargets"
-        :assets="assets"
-        :scanningOverlayId="'scanning-overlay'"
-        :loadingOverlayId="'loading-overlay'"
-      />
+      <ARScene ref="ar-scene" :mindarImage="mindarImage" :modelsInTargets="modelsInTargets" :assets="assets"
+        :scanningOverlayId="'scanning-overlay'" :loadingOverlayId="'loading-overlay'" />
     </template>
   </ARScenePage>
 </template>
@@ -29,33 +23,37 @@ export default {
   data() {
     return {
       mindarImage: {
-        targetSrc: "./targets/targets.mind",
-        filterMinCF: 0.00001,
-        filterBeta: 0.001,
+        targetSrc: "./targets/targets_.mind", // Make sure this file has two targets
+        filterMinCF: 0.0001,
+        filterBeta: 2000,
       },
       modelsInTargets: [
         [
-          // TODO: Change the id and src asset of the model
-          // Make sure the model is in the public folder
-          // The second parameter is the id of the asset with the # prefix
-          // The third parameter is the model data, such as position, scale, rotation, etc.
-          // Note only certain properties are supported by AGltfModelData,
-          // if you want to add more properties like rotationY(if not implemented)
-          // , you can extend the class as required
-          new AGltfModelData("duck", "#duck-glb", {
-            positionX: 0,
-            scale: 0.5,
-            positionY: 0,
-            // try '*' initially to play any animation clip, if not working,
-            // assuming "loop" is a valid animation clip name,
-            animationClip: "loop",
+          // Both models on the first target
+          new AGltfModelData("BoatScene", "#BoatScene-glb", {
+            positionX: 2.5,
+            scale: 0.8,
+            positionY: -1.5,
+            animationClip: "*",
+            rotationX: 0,
+            rotationY: 30,
+            positionZ: -3,
+          }),
+          new AGltfModelData("PHOENIX", "#PHOENIX-glb", {
+            positionX: 0, // Position to the right of the boat
+            scale: 0.01,
+            positionY: 2.5, // Position above the boat
+            animationClip: "*",
             rotationX: 0,
             positionZ: 0,
           }),
         ],
       ],
-      // TODO: Change the id and path to the model
-      assets: [new AAssetItem("duck-glb", "./models/duck.glb")],
+      // Add both model assets
+      assets: [
+        new AAssetItem("BoatScene-glb", "./models/BoatScene.glb"),
+        new AAssetItem("PHOENIX-glb", "./models/PHOENIX.glb")
+      ],
     };
   },
 };
