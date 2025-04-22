@@ -1,7 +1,20 @@
 <template>
-  <div class="overlay">
-    <div class="logo" v-if="!splashScreen">
-      <Logo />
+  <div class="overlay" v-if="!splashScreen">
+    <div class="header">
+      <div class="logo">
+        <Logo />
+      </div>
+      <div class="header-text">
+        <h3>APRIL 28 | 7.00 PM</h3>
+        <h5>At Sumanadasa Courtyard</h5>
+      </div>
+    </div>
+    <div class="flex-1"></div>
+    <div class="footer">
+      <div>
+        In Commemoration of the 40th Anniversary of the Department of Computer
+        Science & Engineering
+      </div>
     </div>
   </div>
 
@@ -20,19 +33,49 @@
 </template>
 
 <style scoped>
-.overlay{
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 9999;
+  display: flex;
+  color: var(--theme-bg);
+  flex-direction: column;
 }
+
+.header {
+  display: flex;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
 .logo {
-  width: 100px;
   background-color: var(--theme-bg);
   border: 0px;
   border-radius: 0 0 45px 0;
+  width: 100px;
+}
+
+.flex-1 {
+  flex: 1;
+}
+.footer {
+  padding: 1.5rem;
+  margin-right: 2rem;
+  font-size: 0.8rem;
 }
 </style>
 
