@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Create audio element
     const backgroundMusic = document.createElement('audio');
-    backgroundMusic.src = 'sakura/audio/sakura-music.mp3'; // You'll need to add this file
+    backgroundMusic.src = '/sakura/audio/sakura-music.mp3'; // You'll need to add this file
     backgroundMusic.loop = true;
     document.body.appendChild(backgroundMusic);
     
