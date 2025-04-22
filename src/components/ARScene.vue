@@ -53,7 +53,7 @@
                 visible
                 scale="1"
                 @loaded="onFixedEntityLoaded">
-        <!-- Phoenix flying animation -->
+        <!-- Adult Phoenix flying animation -->
         <a-entity v-if="isPhoenixModel"
                  animation="property: position; 
                           to: 0 2 0; 
@@ -64,7 +64,7 @@
         </a-entity>
         <a-entity v-if="isPhoenixModel"
                  animation="property: rotation; 
-                          to: 0 360 0; 
+                          to: 0 -360 0; 
                           loop: true; 
                           dur: 15000; 
                           easing: linear">
@@ -75,6 +75,31 @@
                           dir: alternate; 
                           loop: true; 
                           dur: 2000; 
+                          easing: easeInOutSine">
+        </a-entity>
+
+        <!-- Baby Phoenix flying animation -->
+        <a-entity v-if="isBabyPhoenixModel"
+                 animation="property: position; 
+                          to: 0 1 0; 
+                          dir: alternate; 
+                          loop: true; 
+                          dur: 2000; 
+                          easing: easeInOutSine">
+        </a-entity>
+        <a-entity v-if="isBabyPhoenixModel"
+                 animation="property: rotation; 
+                          to: 0 -360 0; 
+                          loop: true; 
+                          dur: 10000; 
+                          easing: linear">
+        </a-entity>
+        <a-entity v-if="isBabyPhoenixModel"
+                 animation="property: scale; 
+                          to: 1.05 1.05 1.05; 
+                          dir: alternate; 
+                          loop: true; 
+                          dur: 1500; 
                           easing: easeInOutSine">
         </a-entity>
 
@@ -159,6 +184,7 @@ export default {
       pointLightIntensity: 0.5,
       lightUpdateInterval: null,
       isPhoenixModel: false,
+      isBabyPhoenixModel: false,
       isBoatModel: false,
       positionBuffer: new THREE.Vector3(),
       rotationBuffer: new THREE.Euler(),
@@ -322,7 +348,11 @@ export default {
       
       const model = this.modelsInTargets[0][index];
       if (model.id.toLowerCase().includes('phoenix')) {
-        this.isPhoenixModel = true;
+        if (model.id.toLowerCase().includes('baby')) {
+          this.isBabyPhoenixModel = true;
+        } else {
+          this.isPhoenixModel = true;
+        }
       } else if (model.id.toLowerCase().includes('boat')) {
         this.isBoatModel = true;
       }
