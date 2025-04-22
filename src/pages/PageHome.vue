@@ -69,12 +69,10 @@
   width: 100px;
 }
 
-.flex-1 {
-  flex: 1;
-}
 .footer {
+  width: 80%;
+  margin-top: auto;
   padding: 1.5rem;
-  margin-right: 2rem;
   font-size: 0.8rem;
 }
 </style>
