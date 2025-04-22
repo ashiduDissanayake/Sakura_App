@@ -10,7 +10,9 @@
     "serve": "zapworks serve --lan dist/"
   },
   "dependencies": {
+    "aframe-environment-component": "^1.5.0",
     "lottie-web-vue": "^2.0.7",
+    "three": "^0.175.0",
     "vue": "^3.2.47"
   },
   "devDependencies": {

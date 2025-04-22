@@ -25,7 +25,7 @@ export default {
       mindarImage: {
         targetSrc: "./targets/targets_.mind",
         filterMinCF: 0.0001,
-        filterBeta: 1.0,
+        filterBeta: 0.001,
         warmupTolerance: 5,
         missTolerance: 5
       },
@@ -33,22 +33,22 @@ export default {
         [
           // First model - Boat
           new AGltfModelData("BoatScene", "#BoatScene-glb", {
-            positionX: 1, // Position to the left
-            scale: 0.6,
-            positionY: 0,
+            positionX: 0, // Position to the left
+            scale: 0.5,
+            positionY: -5,
             animationClip: "*",
             rotationX: 0,
             rotationY: 30,
-            positionZ: 0,
+            positionZ: -5,
           }),
           // Second model - Phoenix
           new AGltfModelData("PHOENIX", "#PHOENIX-glb", {
             positionX: 0,
             scale: 0.02,
-            positionY: 3,
+            positionY: 1.5,
             animationClip: "*",
             rotationX: 0,
-            positionZ: 0,
+            positionZ: -3,
           }),
         ],
       ],
