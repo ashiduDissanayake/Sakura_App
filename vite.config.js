@@ -8,6 +8,8 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 export default defineConfig({
   base: '/sakura/', // Set the base path for hosting in /sakura
   plugins: [vue(), vueJsx()],
+  publicPath: '/sakura/',
+  base: '/sakura/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

@@ -1,5 +1,5 @@
 {
-  "name": "mindar_cse_poson",
+  "name": "sakura",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,7 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "serve": "zapworks serve --lan dist/"
+    "serve": "zapworks serve --lan"
   },
   "dependencies": {
     "aframe-environment-component": "^1.5.0",
@@ -18,7 +18,6 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
-    "@zappar/zapworks-cli": "^2.0.8",
     "vite": "^4.3.9"
   }
 }
