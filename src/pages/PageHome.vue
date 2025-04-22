@@ -23,35 +23,37 @@ export default {
   data() {
     return {
       mindarImage: {
-        targetSrc: "./targets/targets_.mind", // Make sure this file has two targets
+        targetSrc: "./targets/targets_.mind",
         filterMinCF: 0.0001,
-        filterBeta: 2000,
+        filterBeta: 1.0,
+        warmupTolerance: 5,
+        missTolerance: 5
       },
       modelsInTargets: [
         [
-          // Both models on the first target
+          // First model - Boat
           new AGltfModelData("BoatScene", "#BoatScene-glb", {
-            positionX: 2.5,
-            scale: 0.8,
-            positionY: -1.5,
+            positionX: 1, // Position to the left
+            scale: 0.6,
+            positionY: 0,
             animationClip: "*",
             rotationX: 0,
             rotationY: 30,
-            positionZ: -3,
+            positionZ: 0,
           }),
+          // Second model - Phoenix
           new AGltfModelData("PHOENIX", "#PHOENIX-glb", {
-            positionX: 0, // Position to the right of the boat
-            scale: 0.01,
-            positionY: 2.5, // Position above the boat
+            positionX: 0,
+            scale: 0.02,
+            positionY: 3,
             animationClip: "*",
             rotationX: 0,
             positionZ: 0,
           }),
         ],
       ],
-      // Add both model assets
       assets: [
-        new AAssetItem("BoatScene-glb", "./models/BoatScene.glb"),
+        new AAssetItem("BoatScene-glb", "./models/BoatSceneOcilate.glb"),
         new AAssetItem("PHOENIX-glb", "./models/PHOENIX.glb")
       ],
     };
