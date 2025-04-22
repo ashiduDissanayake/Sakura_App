@@ -53,13 +53,13 @@ export default {
           }),
           // Baby Phoenix
           new AGltfModelData("BABY_PHOENIX", "#PHOENIX-glb", {
-            positionX: 0.5,
+            positionX: 1,
             scale: 0.01,
-            positionY: 1.0,
+            positionY: 0.5,
             animationClip: "*",
             rotationX: 0,
-            rotationY: -30,
-            positionZ: -2.5,
+            rotationY: 60,
+            positionZ: -3.5,
           }),
         ],
       ],

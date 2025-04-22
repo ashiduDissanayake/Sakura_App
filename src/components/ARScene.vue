@@ -64,14 +64,14 @@
         </a-entity>
         <a-entity v-if="isPhoenixModel"
                  animation="property: rotation; 
-                          to: 0 -360 0; 
+                          to: 0 360 0; 
                           loop: true; 
                           dur: 15000; 
                           easing: linear">
         </a-entity>
         <a-entity v-if="isPhoenixModel"
                  animation="property: scale; 
-                          to: 1.1 1.1 1.1; 
+                          to: -1.1 1.1 1.1; 
                           dir: alternate; 
                           loop: true; 
                           dur: 2000; 
@@ -89,14 +89,14 @@
         </a-entity>
         <a-entity v-if="isBabyPhoenixModel"
                  animation="property: rotation; 
-                          to: 0 -360 0; 
+                          to: 0 360 0; 
                           loop: true; 
                           dur: 10000; 
                           easing: linear">
         </a-entity>
         <a-entity v-if="isBabyPhoenixModel"
                  animation="property: scale; 
-                          to: 1.05 1.05 1.05; 
+                          to: -1.05 1.05 1.05; 
                           dir: alternate; 
                           loop: true; 
                           dur: 1500; 
