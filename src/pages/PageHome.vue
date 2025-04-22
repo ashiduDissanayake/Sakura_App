@@ -143,6 +143,15 @@ export default {
           // Adult Phoenix
           new AGltfModelData("PHOENIX", "#PHOENIX-glb", {
             positionX: 0,
+            scale: 0.015,
+            positionY: 0,
+            animationClip: "*",
+            rotationX: 0,
+            rotationY: 30,
+            positionZ: -2.5,
+          }),
+          new AGltfModelData("PHOENIX", "#PHOENIX-glb", {
+            positionX: 0,
             scale: 0.02,
             positionY: 1.5,
             animationClip: "*",
