@@ -6,7 +6,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: '/sakura/', // Set the base path for hosting in /sakura
+  base: '/sakura/', // Set the base path for hosting in /sakura
   plugins: [vue(), vueJsx()],
   resolve: {
     alias: {
