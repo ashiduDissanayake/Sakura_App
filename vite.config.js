@@ -1,5 +1,5 @@
 import { fileURLToPath, URL } from 'node:url'
-
+import fs from 'fs'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
@@ -14,6 +14,10 @@ export default defineConfig({
     }
   },
   server: {
-    host: true // listen on all addresses, including LAN and public addresses
+    host: true, // listen on all addresses, including LAN and public addresses,
+    https: {
+      key: fs.readFileSync('certs/selfsigned.key'),
+      cert: fs.readFileSync('certs/selfsigned.crt'),
+    },
   }
 })
