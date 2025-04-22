@@ -44,11 +44,6 @@ export default {
       showSplashScreen: true,
     };
   },
-  computed: {
-    splashScreen() {
-      return this.showSplashScreen;
-    },
-  },
   mounted() {
     const ascene = document.querySelector("a-scene");
     ascene.addEventListener(
@@ -63,26 +58,16 @@ export default {
       }.call(this)
     );
   },
+  computed: {
+    splashScreen() {
+      return this.showSplashScreen;
+    },
+  },
 };
 </script>
 
 <template>
-  <div class="logo" v-if="!splashScreen">
-    <Logo />
-  </div>
   <SplashScreen v-if="splashScreen" />
   <!--    slot-->
   <slot name="scene"></slot>
 </template>
-
-<style scoped>
-.logo {
-  position: absolute;
-  z-index: 9999;
-  left: 0;
-  width: 100px;
-  background-color: var(--theme-bg);
-  border: 0px;
-  border-radius: 0 0 45px 0;
-}
-</style>
