@@ -44,11 +44,6 @@ export default {
       showSplashScreen: true,
     };
   },
-  computed: {
-    splashScreen() {
-      return this.showSplashScreen;
-    },
-  },
   mounted() {
     const ascene = document.querySelector("a-scene");
     ascene.addEventListener(
@@ -62,6 +57,11 @@ export default {
         }.bind(this);
       }.call(this)
     );
+  },
+  computed: {
+    splashScreen() {
+      return this.showSplashScreen;
+    },
   },
 };
 </script>

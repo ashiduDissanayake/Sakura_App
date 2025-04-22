@@ -92,8 +92,28 @@ export default {
     ARScene,
     Logo,
   },
+  computed: {
+    splashScreen() {
+      return this.showSplashScreen;
+    },
+  },
+  mounted() {
+    const ascene = document.querySelector("a-scene");
+    ascene.addEventListener(
+      "renderstart",
+      function onAframeRenderStart() {
+        let haveRun = false;
+        return function () {
+          if (haveRun) return;
+          haveRun = true;
+          this.showSplashScreen = false;
+        }.bind(this);
+      }.call(this)
+    );
+  },
   data() {
     return {
+      showSplashScreen: true,
       mindarImage: {
         targetSrc: "./targets/targets_.mind",
         filterMinCF: 0.0001,
@@ -104,15 +124,16 @@ export default {
       modelsInTargets: [
         [
           // First model - Boat
-          new AGltfModelData("BoatScene", "#BoatScene-glb", {
-            positionX: 0,
-            scale: 0.5,
-            positionY: -5,
-            animationClip: "*",
-            rotationX: 0,
-            rotationY: 30,
-            positionZ: -5,
-          }),
+          // new AGltfModelData("BoatScene", "#BoatScene-glb", {
+          //   positionX: 0,
+          //   scale: 0.5,
+          //   positionY: -5,
+          //   animationClip: "*",
+          //   rotationX: 0,
+          //   rotationY: 30,
+          //   positionZ: -5,
+          // }),
+
           // Adult Phoenix
           new AGltfModelData("PHOENIX", "#PHOENIX-glb", {
             positionX: 0,
@@ -136,7 +157,7 @@ export default {
         ],
       ],
       assets: [
-        new AAssetItem("BoatScene-glb", "./models/BoatSceneOcilate.glb"),
+        // new AAssetItem("BoatScene-glb", "./models/BoatSceneOcilate.glb"),
         new AAssetItem("PHOENIX-glb", "./models/PHOENIX.glb"),
       ],
     };
