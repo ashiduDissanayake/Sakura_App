@@ -1,11 +1,40 @@
 <template>
+  <div class="overlay">
+    <div class="logo" v-if="!splashScreen">
+      <Logo />
+    </div>
+  </div>
+
   <ARScenePage>
     <template #scene>
-      <ARScene ref="ar-scene" :mindarImage="mindarImage" :modelsInTargets="modelsInTargets" :assets="assets"
-        :scanningOverlayId="'scanning-overlay'" :loadingOverlayId="'loading-overlay'" />
+      <ARScene
+        ref="ar-scene"
+        :mindarImage="mindarImage"
+        :modelsInTargets="modelsInTargets"
+        :assets="assets"
+        :scanningOverlayId="'scanning-overlay'"
+        :loadingOverlayId="'loading-overlay'"
+      />
     </template>
   </ARScenePage>
 </template>
+
+<style scoped>
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+}
+.logo {
+  width: 100px;
+  background-color: var(--theme-bg);
+  border: 0px;
+  border-radius: 0 0 45px 0;
+}
+</style>
 
 <script>
 import Logo from "../components/Logo.vue";
@@ -27,7 +56,7 @@ export default {
         filterMinCF: 0.0001,
         filterBeta: 0.001,
         warmupTolerance: 5,
-        missTolerance: 5
+        missTolerance: 5,
       },
       modelsInTargets: [
         [
@@ -65,7 +94,7 @@ export default {
       ],
       assets: [
         new AAssetItem("BoatScene-glb", "./models/BoatSceneOcilate.glb"),
-        new AAssetItem("PHOENIX-glb", "./models/PHOENIX.glb")
+        new AAssetItem("PHOENIX-glb", "./models/PHOENIX.glb"),
       ],
     };
   },
