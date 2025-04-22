@@ -5,13 +5,15 @@
         <Logo />
       </div>
       <div class="header-text">
-        <h3>APRIL 28 | 7.00 PM</h3>
-        <h5>At Sumanadasa Courtyard</h5>
+        <div class="text-box">
+          <h3>APRIL 28 | 7.00 PM</h3>
+          <h5>At Sumanadasa Courtyard</h5>
+        </div>
       </div>
     </div>
     <div class="flex-1"></div>
     <div class="footer">
-      <div>
+      <div class="text-box">
         In Commemoration of the 40th Anniversary of the Department of Computer
         Science & Engineering
       </div>
@@ -43,11 +45,18 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   z-index: 9999;
   display: flex;
   color: var(--theme-bg);
   flex-direction: column;
+}
+
+.text-box {
+  color: var(--text-color);
+  padding: 0.75rem;
+  border-radius: 1rem;
+  background-color: var(--theme-bg);
 }
 
 .header {
@@ -70,7 +79,6 @@
 }
 
 .footer {
-  width: 80%;
   margin-top: auto;
   padding: 1.5rem;
   font-size: 0.8rem;
