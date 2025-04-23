@@ -15,9 +15,9 @@ export default defineConfig({
   },
   server: {
     host: true, // listen on all addresses, including LAN and public addresses,
-    https: {
-      key: fs.readFileSync('certs/selfsigned.key'),
-      cert: fs.readFileSync('certs/selfsigned.crt'),
-    },
+    // https: {
+    //   key: fs.readFileSync('certs/selfsigned.key'),
+    //   cert: fs.readFileSync('certs/selfsigned.crt'),
+    // },
   }
 })
