@@ -148,7 +148,7 @@ export default {
             animationClip: "*",
             rotationX: 0,
             rotationY: 30,
-            positionZ: -2.5,
+            positionZ: -1.5,
           }),
           new AGltfModelData("PHOENIX", "#PHOENIX-glb", {
             positionX: 0,
@@ -157,23 +157,35 @@ export default {
             animationClip: "*",
             rotationX: 0,
             rotationY: -30,
-            positionZ: -3,
+            positionZ: -2,
           }),
-          // Baby Phoenix
-          new AGltfModelData("BABY_PHOENIX", "#PHOENIX-glb", {
+          // // Baby Phoenix
+          // new AGltfModelData("BABY_PHOENIX", "#PHOENIX-glb", {
+          //   positionX: 1,
+          //   scale: 0.01,
+          //   positionY: 0.5,
+          //   animationClip: "*",
+          //   rotationX: 0,
+          //   rotationY: 60,
+          //   positionZ: -1.5,
+          // }),
+
+          // Notes
+          new AGltfModelData("Notes", "#Notes-glb", {
             positionX: 1,
-            scale: 0.01,
+            scale: 1,
             positionY: 0.5,
             animationClip: "*",
             rotationX: 0,
-            rotationY: 60,
-            positionZ: -3.5,
+            rotationY: 0,
+            positionZ: 3,
           }),
         ],
       ],
       assets: [
         // new AAssetItem("BoatScene-glb", "./models/BoatSceneOcilate.glb"),
         new AAssetItem("PHOENIX-glb", "./models/PHOENIX.glb"),
+        new AAssetItem("Notes-glb", "./models/Notes.glb"),
       ],
     };
   },
